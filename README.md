@@ -34,43 +34,43 @@ I have securely hidden all my secret keys inside environment variables. For usin
 
     ![image (assets/images/signup.png=400*250)](/assets/images/signup.png)
 
-    <p>Fill the required fields i.e. Full Name,Email,Password,Confirm Password</p>
-    <p>First Server will check for Password fields match or not.</p>
-    <p>After that check for email if already exists.</p>
-    <p>If both checks are valid then user account will be create and user Will see login page</p>
+    Fill the required fields i.e. Full Name,Email,Password,Confirm Password
+    First Server will check for Password fields match or not.
+    After that check for email if already exists.
+    If both checks are valid then user account will be create and user Will see login page
 
     ![image (assets/images/login.png=400*250)](/assets/images/login.png)
 
-    <p>Enter the details in field i.e. Email and password</p>
-    <p>First server checks for email exists in database.</p>
-    <p>Second Server checks for the password validation.</p>
-    <p>If both ckecks are validated user will be directed to Home page.</p>
+    Enter the details in field i.e. Email and password
+    First server checks for email exists in database.
+    Second Server checks for the password validation.
+    If both ckecks are validated user will be directed to Home page.
 
  ## 2. SOCIAL AUTHENTICATION
 
     ![image (assets/images/login.png=400*250)](/assets/images/login.png)
 
-    <p>User can sign in using google or Facebook by clicking on the below buttons in login/signup page</p>
-    <p>User needs to enter correct data inside google or Facebook. After successful validation user will be directed to Home Page.</p>
+    User can sign in using google or Facebook by clicking on the below buttons in login/signup page
+    User needs to enter correct data inside google or Facebook. After successful validation user will be directed to Home Page.
 
  ## 3. FORGET PASSWORD
 
     ![image (assets/images/forget_page.png=400*250)](/assets/images/forget_page.png)
 
-    <p>By clicking on the Forget Password link on Login page. You will be redirected to Forget Password page where you have to enter the registered Email. If Email exists you will get the link for reset Password on Email.</p>
+    By clicking on the Forget Password link on Login page. You will be redirected to Forget Password page where you have to enter the registered Email. If Email exists you will get the link for reset Password on Email.
 
     ![image (assets/images/mail_page.png=400*250)](/assets/images/mail_page.png)
 
-    <p>If You have registered email on the website you will get the mail inside Gmail.</p>
-    <p>You have to click on the link for redirecting to the Reset Password Page.</p>
+    If You have registered email on the website you will get the mail inside Gmail.
+    You have to click on the link for redirecting to the Reset Password Page.
 
     ![image (assets/images/reset_pass_page.png=400*250)](/assets/images/reset_pass_page.png)
 
-    <p>Now You will get Reset Password Page if You have the valid token for Reset Password</p>
-    <p>Here Enter the new Password and click on below button.</p>
+    Now You will get Reset Password Page if You have the valid token for Reset Password.
+    Here Enter the new Password and click on below button.
 
  ## 4. RESET PASSWORD
 
     ![image (assets/images/reset_pass_page.png=400*250)](/assets/images/reset_pass_page.png)
 
-    <p>If the user already logged in. He can directly reset password by clicking on reset-password on Home Page.</p>
+    If the user already logged in. He can directly reset password by clicking on reset-password on Home Page.
