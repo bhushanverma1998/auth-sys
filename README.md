@@ -73,6 +73,4 @@ I have securely hidden all my secret keys inside environment variables. For usin
 
     ![image (assets/images/reset_pass_page.png=400*250)](/assets/images/reset_pass_page.png)
 
-    <p>If the user already logged in. He can directly reset password by clicking on reset-password on Home Page.</p>#� �a�u�t�h�e�n�t�i�c�a�t�i�o�n�-�s�y�s�t�e�m�
-�
-�
+    <p>If the user already logged in. He can directly reset password by clicking on reset-password on Home Page.</p>
