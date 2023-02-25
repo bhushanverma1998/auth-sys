@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 65px;
+    padding: 0 20px;
+    background: #2b2b30;
+    color: #f9f9f9;
+    position: relative;
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-menu li {
+    list-style-type: none;
+}
+
+.nav-menu li a {
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+}
+
+.active,
+.links:hover {
+    color: skyblue;
+}
+
+#profile-img {
+    border-radius: 50%;
+    border: 1px solid white;
+}

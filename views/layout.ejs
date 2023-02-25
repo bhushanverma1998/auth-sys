@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css" />
+    <%- style%>
+        <title>Home Page</title>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+
+<body>
+    <%- include('_header')%>
+        <%- body %>
+            <%-script%>
+
+
+                <script>
+        <%if (flash.success && flash.success.length > 0) {%>
+                        new Noty({
+                            layout: 'topRight',
+                            theme: 'relax', // or relax
+                            type: 'success', // success, error, warning, information, notification
+                            text: '<%= flash.success %>', // [string|html] can be HTML or STRING
+                            timeout: 1500
+                        }).show();
+     <%}%> 
+    <%if (flash.error && flash.error.length > 0) {%>
+                        new Noty({
+                            layout: 'topRight',
+                            theme: 'relax', // or relax
+                            type: 'error', // success, error, warning, information, notification
+                            text: '<%= flash.error %>', // [string|html] can be HTML or STRING
+                            timeout: 1500
+                        }).show();
+    <%} %>
+                </script>
+
+</body>
+
+</html>

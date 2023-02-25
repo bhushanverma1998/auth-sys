@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/css/user_signup.css">
+<script src="https://www.google.com/recaptcha/api.js?render=6LeO1XckAAAAAJH0pDTyOCgS8GhV-UtitdpORXqV"></script>
+<div id="signup-page">
+    <div class="signup-card">
+        <h2>Sign Up</h2>
+        <h3>Enter your credentials</h3>
+        <form action="/users/create" method="post" class="signup-form">
+            <input type="text" class="control" name="name" placeholder="Enter your Name" required>
+            <input spellcheck="false" name="email" class="control" type="email" placeholder="Email" required/>
+            <input spellcheck="false" name="password" class="control" id="password" type="password" placeholder="Password" required/>
+            <input spellcheck="false" name="cpassword" class="control" id="cpassword" type="password" placeholder="Confirm Password" required/>
+            <input type="hidden" id="captcha" name="captcha">
+            <button class="control" type="submit">SIGN UP</button>
+        </form>
+        <div class="gap">
+            <div class="left-line"></div>
+            <div class="or-text">OR</div>
+            <div class="right-line"></div>
+        </div>
+        <div class="social-auths">
+            <a class="social-btns google-social" href="/users/auth/google">Connect with Google</a>
+            <a class="social-btns facebook-social" href="/users/auth/facebook">Connect with Facebook</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    grecaptcha.ready(function () {
+    grecaptcha.execute('6LeO1XckAAAAAJH0pDTyOCgS8GhV-UtitdpORXqV', { action: "/users/create" }).then(function (token) {
+      document.getElementById("captcha").value = token;
+    });
+  });
+</script>

@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/css/header.css">
+<nav class="navbar" id="nav">
+    <div id="nav-menu" class="nav-menu">
+        <ul>
+            <li><a href="/" title="Home" class="links">Home</a></li>
+            <%if(locals.user){%>
+                <li><a class="links" href="/users/reset-password">Reset Password</a></li>
+                <li><a class="links" href="/users/signout" title="Logout">Logout</a></li>
+                <%}else{%>
+                <li><a class="links" href="/users/signup" title="Sign up">Sign Up</a></li>
+                <li><a class="links" href="/users/login" title="Login">Login</a></li>
+            <%}%>
+        </ul>
+    </div>
+</nav>

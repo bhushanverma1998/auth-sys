@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/css/home.css">
+<div class="home-page">
+    <div class="home-card">
+        <h1>Weclome <strong><%if(locals.user){%>
+            Back! <%=locals.user.name%>
+        <%}%></strong> to Authentication System</h1>
+        <%if(locals.user){%>
+            <a class="controls" href="/users/reset-password">Reset Password</a>
+            <a class="controls" href="/users/signout">Logout</a>
+        <%}else{%>
+            <a class="controls" href="/users/signup">Sign up</a>
+            <a class="controls" href="/users/login">Login</a>
+        <%}%>
+    </div>
+</div>

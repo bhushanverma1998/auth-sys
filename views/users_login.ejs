@@ -1,0 +1,33 @@
+<script src="https://www.google.com/recaptcha/api.js?render=6LeO1XckAAAAAJH0pDTyOCgS8GhV-UtitdpORXqV"></script>
+<link rel="stylesheet" href="/css/user_login.css">
+<div id="login-page">
+    <div class="login-card">
+        <h2>Login</h2>
+        <h3>Enter your credentials</h3>
+        <form action="/users/createSession" method="post" class="login-form" id="login-form">
+            <input spellcheck="false" name="email" class="control" type="email" placeholder="Email" required />
+            <input spellcheck="false" name="password" class="control" id="password" type="password" placeholder="Password" required />
+            <input type="hidden" id="captcha" name="captcha">
+            <a href="/users/reset-password">Forget Password?</a>
+            <button class="control" type="submit">LOGIN</button>
+        </form>
+        </script>
+        <div class="gap">
+            <div class="left-line"></div>
+            <div class="or-text">OR</div>
+            <div class="right-line"></div>
+        </div>
+        <div class="social-auths">
+            <a class="social-btns google-social" href="/users/auth/google">Connect with Google</a>
+            <a class="social-btns facebook-social" href="/users/auth/facebook">Connect with Facebook</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    grecaptcha.ready(function () {
+    grecaptcha.execute('6LeO1XckAAAAAJH0pDTyOCgS8GhV-UtitdpORXqV', { action: "/users/createSession" }).then(function (token) {
+      document.getElementById("captcha").value = token;
+    });
+  });
+</script>
